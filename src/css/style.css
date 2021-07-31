@@ -311,11 +311,11 @@ body{
 .profile-section .main-content-area{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .profile-section .main-content-area img{
   border-radius: 100%;
 }
 .profile-informations-area{
-
+  margin: auto 0.5rem;
 }
