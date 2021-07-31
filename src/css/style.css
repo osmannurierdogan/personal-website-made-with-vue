@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* ! ROOT CASES START */
 :root {
   --contacts-section-color: #ff4a4a;
   --default-button-background-color: #3c3d40;
@@ -17,13 +18,14 @@
   --facebook-color: #4267b2;
   --linkedin-color: #0072b1;
   --twitter-color: #1da1f2;
-  --youtube-color: #c4302b;
+  --youtube-color: #ff1a1a;
   --whatsapp-color: #4fce5d;
   --first-font-family: 'Montserrat', sans-serif;
   --second-font-family: 'Roboto', sans-serif;
 }
+/* ! ROOT CASES END */
 
-/* 
+/* ! BOOTSTRAP ROOT CASES START
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -54,7 +56,9 @@
   --font-family-sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-*/
+! BOOTSTRAP ROOT CASES END */
+
+/* ! ELEMENT STYLING START */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -66,6 +70,9 @@ body{
   color: var(--second-text-color);
   font-family: var(--second-font-family);
 }
+/* ! ELEMENT STYLING END */
+
+/* ! TOP COLORIZED SECTION STYLING START */
 .top-colorized-area {
   display: flex;
   flex-direction: row;
@@ -91,10 +98,15 @@ body{
 .top-colorized-area-style-5{
   background-color: var(--contacts-section-color);
 }
+/* ! TOP COLORIZED SECTION STYLING END */
+
+/* ! SOCIAL MEDIA SECTION STYLING START */
 .social-media-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 1rem;
+  padding: 1rem;
 }
 .social-media-link{
   background-color: var(--main-background-color);
@@ -102,8 +114,9 @@ body{
   color: var(--second-text-color);
   cursor: pointer;
   font-size: 2rem;
+  padding: 1rem;
 }
-.instagram:hover{
+/* .instagram:hover{
   color: var(--instagram-color);
   transition: 0.2s;
   text-shadow:
@@ -180,13 +193,13 @@ body{
     0 0 90px var(--youtube-color),
     0 0 100px var(--youtube-color),
     0 0 150px var(--youtube-color);
-}
+} */
 /* .social-media-link:hover:before{
   filter: blur(3px);
   transform: scale(1.2);
   box-shadow: 0 0 15px #d35400;
-}
-.facebook:hover:before{
+} */
+/* .facebook:hover:before{
   box-shadow: 0 0 15px #4267B2;
 }
 .twitter:hover:before{
@@ -200,37 +213,50 @@ body{
 }
 .youtube:hover:before{
   box-shadow: 0 0 15px #ff0000;
-}
+} */
 .facebook:hover{
-  color: #456cba;
-  box-shadow: 0 0 15px #4267B2;
-  text-shadow: 0 0 15px #4267B2;
+  color: var(--facebook-color);
+  /* box-shadow: 0 0 15px #4267B2;
+  text-shadow: 0 0 15px #4267B2; */
 }
 .twitter:hover{
-  color: #26a4f2;
-  box-shadow: 0 0 15px #1DA1F2;
-  text-shadow: 0 0 15px #1DA1F2;
+  color: var(--twitter-color);
+  /* box-shadow: 0 0 15px #1DA1F2;
+  text-shadow: 0 0 15px #1DA1F2; */
 }
 .instagram:hover{
-  color: #e23670;
-  box-shadow: 0 0 15px #E1306C;
-  text-shadow: 0 0 15px #E1306C;
+  color: var(--instagram-color);
+  /* box-shadow: 0 0 15px #E1306C;
+  text-shadow: 0 0 15px #E1306C; */
 }
 .linkedin:hover{
-  color: #2a6cbb;
-  box-shadow: 0 0 15px #2867B2;
-  text-shadow: 0 0 15px #2867B2;
+  color: var(--linkedin-color);
+  /* box-shadow: 0 0 15px #2867B2;
+  text-shadow: 0 0 15px #2867B2; */
 }
 .youtube:hover{
-  color: #ff1a1a;
-  box-shadow: 0 0 15px #ff0000;
-  text-shadow: 0 0 15px #ff0000;
-} */
-.main-container{
-  margin: 5%;
-  padding: 5%;
-  width: 80vw;
+  color: var(--youtube-color);
+  /* box-shadow: 0 0 15px #ff0000;
+  text-shadow: 0 0 15px #ff0000; */
 }
+.whatsapp:hover{
+  color: var(--whatsapp-color);
+  /* box-shadow: 0 0 15px #ff0000;
+  text-shadow: 0 0 15px #ff0000; */
+}
+/* ! SOCIAL MEDIA SECTION STYLING END */
+
+/* ! MAIN CONTAINER STYLING START */
+.main-container{
+  display: flex;
+  flex-direction: column;
+  margin: auto 5%;
+  justify-content: center;
+  align-items: center;
+}
+/* ! MAIN CONTAINER STYLING END */
+
+/* ! COMMON SECTIONS AND BUTTONS STYLING START */
 .portfolio-section, .resume-section, .profile-section, .testimonials-section, .contacts-section{
   display: flex;
   flex-direction: row;
@@ -241,9 +267,9 @@ body{
   color: var(--third-text-color);
   cursor: pointer;
   height: 15%;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem;
   padding: 1rem;
-  width: 10%;
+  /* width: 10%; */
 }
 .section-button i{
   font-size: 1.25rem;
@@ -278,8 +304,10 @@ body{
   height: 15%;
   margin: 1rem 1rem 1rem 0;
   padding: 1rem;
-  width: 10%;
+  /* width: 10%; */
 }
+/* ! COMMON SECTIONS AND BUTTONS STYLING END */
+
 .profile-section .main-content-area{
   display: flex;
   flex-direction: row;
