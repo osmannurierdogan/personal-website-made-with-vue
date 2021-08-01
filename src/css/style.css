@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /* ! ROOT CASES START */
 :root {
@@ -20,8 +20,8 @@
   --twitter-color: #1da1f2;
   --youtube-color: #ff1a1a;
   --whatsapp-color: #4fce5d;
-  --first-font-family: 'Montserrat', sans-serif;
-  --second-font-family: 'Roboto', sans-serif;
+  --first-font-family: "Montserrat", sans-serif;
+  --second-font-family: "Roboto", sans-serif;
 }
 /* ! ROOT CASES END */
 
@@ -65,10 +65,11 @@
   padding: 0;
   text-align: center;
 }
-body{
+body {
   background-color: var(--main-background-color);
   color: var(--second-text-color);
   font-family: var(--second-font-family);
+  scroll-behavior: smooth;
 }
 /* ! ELEMENT STYLING END */
 
@@ -80,22 +81,22 @@ body{
   justify-content: space-between;
   width: 100%;
 }
-.top-colorized-area span{
+.top-colorized-area span {
   width: 20%;
 }
-.top-colorized-area-style-1{
+.top-colorized-area-style-1 {
   background-color: var(--profile-section-color);
 }
-.top-colorized-area-style-2{
+.top-colorized-area-style-2 {
   background-color: var(--resume-section-color);
 }
-.top-colorized-area-style-3{
+.top-colorized-area-style-3 {
   background-color: var(--portfolio-section-color);
 }
-.top-colorized-area-style-4{
+.top-colorized-area-style-4 {
   background-color: var(--testimonials-section-color);
 }
-.top-colorized-area-style-5{
+.top-colorized-area-style-5 {
   background-color: var(--contacts-section-color);
 }
 /* ! TOP COLORIZED SECTION STYLING END */
@@ -105,10 +106,11 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 1rem;
   padding: 1rem;
 }
-.social-media-link{
+.social-media-link {
   background-color: var(--main-background-color);
   border: none;
   color: var(--second-text-color);
@@ -214,32 +216,32 @@ body{
 .youtube:hover:before{
   box-shadow: 0 0 15px #ff0000;
 } */
-.facebook:hover{
+.facebook:hover {
   color: var(--facebook-color);
   /* box-shadow: 0 0 15px #4267B2;
   text-shadow: 0 0 15px #4267B2; */
 }
-.twitter:hover{
+.twitter:hover {
   color: var(--twitter-color);
   /* box-shadow: 0 0 15px #1DA1F2;
   text-shadow: 0 0 15px #1DA1F2; */
 }
-.instagram:hover{
+.instagram:hover {
   color: var(--instagram-color);
   /* box-shadow: 0 0 15px #E1306C;
   text-shadow: 0 0 15px #E1306C; */
 }
-.linkedin:hover{
+.linkedin:hover {
   color: var(--linkedin-color);
   /* box-shadow: 0 0 15px #2867B2;
   text-shadow: 0 0 15px #2867B2; */
 }
-.youtube:hover{
+.youtube:hover {
   color: var(--youtube-color);
   /* box-shadow: 0 0 15px #ff0000;
   text-shadow: 0 0 15px #ff0000; */
 }
-.whatsapp:hover{
+.whatsapp:hover {
   color: var(--whatsapp-color);
   /* box-shadow: 0 0 15px #ff0000;
   text-shadow: 0 0 15px #ff0000; */
@@ -247,9 +249,10 @@ body{
 /* ! SOCIAL MEDIA SECTION STYLING END */
 
 /* ! MAIN CONTAINER STYLING START */
-.main-container{
+.main-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: auto 5%;
   justify-content: center;
   align-items: center;
@@ -257,11 +260,15 @@ body{
 /* ! MAIN CONTAINER STYLING END */
 
 /* ! COMMON SECTIONS AND BUTTONS STYLING START */
-.portfolio-section, .resume-section, .profile-section, .testimonials-section, .contacts-section{
+.portfolio-section,
+.resume-section,
+.profile-section,
+.testimonials-section,
+.contacts-section {
   display: flex;
   flex-direction: row;
 }
-.section-button{
+.section-button {
   border: none;
   border-radius: 5px;
   color: var(--third-text-color);
@@ -270,32 +277,33 @@ body{
   margin: 1rem;
   padding: 1rem;
   /* width: 10%; */
+  /* display: none; */
 }
-.section-button i{
-  font-size: 1.25rem;
-  height: 1.25rem;
-  width: 1.25rem;
+.section-button i {
+  font-size: 1.8rem;
+  height: 1.8rem;
+  width: 1.8rem;
 }
-.profile-button{
+.profile-button {
   background-color: var(--profile-section-color);
 }
-.resume-button{
+.resume-button {
   background-color: var(--resume-section-color);
 }
-.portfolio-button{
+.portfolio-button {
   background-color: var(--portfolio-section-color);
 }
-.testimonials-button{
+.testimonials-button {
   background-color: var(--testimonials-section-color);
 }
-.contacts-button{
+.contacts-button {
   background-color: var(--contacts-section-color);
 }
-.main-content-area{
+.main-content-area {
   margin: 1rem 1rem 1rem 0;
   width: 800px;
 }
-.section-expand-button{
+.section-expand-button {
   background-color: var(--default-button-background-color);
   border: none;
   border-radius: 5px;
@@ -308,14 +316,39 @@ body{
 }
 /* ! COMMON SECTIONS AND BUTTONS STYLING END */
 
-.profile-section .main-content-area{
+.profile-section .main-content-area {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.profile-section .main-content-area img{
+.profile-section .main-content-area img {
   border-radius: 100%;
 }
-.profile-informations-area{
+.profile-informations-area {
   margin: auto 0.5rem;
+}
+
+.resume-section-content-area-title,
+.portfolio-section-content-area-title,
+.testimonials-section-content-area-title,
+.contacts-section-content-area-title {
+  text-align: left;
+  width: max-content;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.resume-section-content-area-title{
+  background-color: var(--resume-section-color);
+}
+.portfolio-section-content-area-title{
+  background-color: var(--portfolio-section-color);
+}
+.testimonials-section-content-area-title{
+  background-color: var(--testimonials-section-color);
+}
+.contacts-section-content-area-title{
+  background-color: var(--contacts-section-color);
 }
