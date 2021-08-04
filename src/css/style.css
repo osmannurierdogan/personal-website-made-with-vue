@@ -352,3 +352,28 @@ body {
 .contacts-section-content-area-title{
   background-color: var(--contacts-section-color);
 }
+
+/* ! PORTFOLIO SECTION STYLING START */
+.portfolio-list{
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.portfolio-item{
+  border: 1px solid red;
+  width: 10rem;
+  height: 10rem;
+  padding: 15px;
+  margin: 1rem
+}
+.portfolio-item{
+  list-style: none;
+}
+.portfolio-item .fem-challenge-1{
+  background-color: var(--portfolio-section-color);
+  background-image: url('../../src/assets/frontend-mentor-challenges/challenge-1/assets/design/desktop-design.jpg');
+  background-size: 100%;
+  background-origin: content-box;
+}
+/* ! PORTFOLIO SECTION STYLING END */
